@@ -6,22 +6,24 @@ import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import AddExpenseForm from './components/AddExpenseForm';
 import { AppProvider } from './context/AppContext';
+import './styles/App.scss';
 
 
 const App = () => {
     return (
+    <div className= 'body'>
     <AppProvider> 
        <div className = 'container'>
         <h1 className='mt-3'>My Budget Planner</h1>
         <div className= "row mt-3">
-            <div className="col-sm">
+            <div >
               <Budget/>  
             </div>
             <div className="col-sm">
-                <Remaining/>
-            </div>
-            <div>
                 <ExpenseTotal/>
+            </div>
+            <div className="col-sm">
+                <Remaining/>
             </div>
         </div>
         <h3 className='mt-3'>Expenses</h3>
@@ -38,6 +40,7 @@ const App = () => {
             </div>
        </div> 
     </AppProvider>
+    </div>
     );
 };
 

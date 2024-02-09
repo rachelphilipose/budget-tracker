@@ -51,7 +51,7 @@ const AddExpenseForm = () => {
                 </div>
                 <div className= 'row mt-3'>
                     <div className='col-sm'>
-                        <button type='submit' className='btn btn-primary'>
+                        <button type='submit' className='btn btn-dark'>
                             Save
                         </button>
                     </div>
